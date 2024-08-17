@@ -49,9 +49,13 @@ This project is a fullstack application designed to manage "Help Center" cards. 
 
 - Create a card:
  - POST /cards
- - Request body: 
+ - Request body:
+
    ```bash
- { "title": "Card Title", "description": "Card Description" }
+   { 
+   "title": "Card Title", 
+   "description": "Card Description"
+   }
    ```
 
  - Creates a new card in the database.
