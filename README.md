@@ -47,22 +47,22 @@ This project is a fullstack application designed to manage "Help Center" cards. 
 
 5. **API Endpoints:**
 
--Create a card:
- -POST /cards
- -Request body: 
+- Create a card:
+ - POST /cards
+ - Request body: 
    ```bash
  { "title": "Card Title", "description": "Card Description" }
    ```
 
- -Creates a new card in the database.
+ - Creates a new card in the database.
 
--Get all cards:
- -GET /cards
- -Returns a list of all cards. 
+- Get all cards:
+ - GET /cards
+ - Returns a list of all cards. 
 
--Get a specific card by title:
- -GET /cards/:title
- -Returns the details of a specific card by its title. 
+- Get a specific card by title:
+ - GET /cards/:title
+ - Returns the details of a specific card by its title. 
 
 
 
@@ -89,31 +89,31 @@ This project is a fullstack application designed to manage "Help Center" cards. 
 
 5. **Features:**
 
--**Responsive Navbar:** Displays the project name "Abstract", the current page location, and a "Submit a Request" button.
--**Banner:** Includes a search input field and a heading.
--**Input Field:** Allows users to find the card easily.
--**Modal:** Allows users to add new cards with a title and description, and submit them to the backend API.
--**Footer:** Contains links to various sections including "Abstract", "Resources", "Community", "Company", and a copyright message.
+- **Responsive Navbar:** Displays the project name "Abstract", the current page location, and a "Submit a Request" button.
+- **Banner:** Includes a search input field and a heading.
+- **Input Field:** Allows users to find the card easily.
+- **Modal:** Allows users to add new cards with a title and description, and submit them to the backend API.
+- **Footer:** Contains links to various sections including "Abstract", "Resources", "Community", "Company", and a copyright message.
 
 ## Folder Structure
 
 ### Backend
- -backend/
-  -models/ - Contains the card model.
-   -card.js
-  -index.js - Entry point for the backend server.
+ - backend/
+  - models/ - Contains the card model.
+   - card.js
+  - index.js - Entry point for the backend server.
 
 ### Frontend
- -frontend/
-  -src/
-   -components/ - Contains reusable components (e.g., Navbar, Footer, Modal).
-   -App.jsx - Main application component.
-   -main.jsx - Entry point for the frontend application.
-   -index.css - Tailwind CSS styles.
-  -vite.config.js - Vite configuration file.
+ - frontend/
+  - src/
+   - components/ - Contains reusable components (e.g., Navbar, Footer, Modal).
+   - App.jsx - Main application component.
+   - main.jsx - Entry point for the frontend application.
+   - index.css - Tailwind CSS styles.
+  - vite.config.js - Vite configuration file.
 
 ## Usage
- *Start the backend server:
+ * Start the backend server:
 
  Navigate to the backend directory and run:
 
@@ -121,7 +121,7 @@ This project is a fullstack application designed to manage "Help Center" cards. 
    Copy code
    npm start
    ```
- *Start the frontend application:
+ * Start the frontend application:
 
 Navigate to the frontend directory and run:
 
@@ -129,7 +129,7 @@ Navigate to the frontend directory and run:
    Copy code
    npm run dev
    ```
- *Access the application:
+ * Access the application:
 
 Open your web browser and go to http://localhost:5173 to view the frontend. The frontend will interact with the backend server running at http://localhost:3000.
 
