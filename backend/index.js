@@ -1,11 +1,21 @@
-const express = require("express");
-const { MongoClient, ServerApiVersion } = require("mongodb");
 require("dotenv").config();
+const express = require("express");
 const cardModel = require("./models/cardModel");
-
+const { MongoClient, ServerApiVersion } = require("mongodb");
+const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Middleware
+const corsConfig = {
+  origin: "*",
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+};
+
+// Enable CORS
+app.use(cors(corsConfig));
+app.options("", cors(corsConfig));
 app.use(express.json());
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
