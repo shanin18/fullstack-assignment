@@ -47,26 +47,25 @@ This project is a fullstack application designed to manage "Help Center" cards. 
 
 5. **API Endpoints:**
 
-- Create a card:
- - POST /cards
- - Request body:
+- **Create a card**:
+  - `POST /cards`
+  - Request body:
+    ```bash
+    { 
+      "title": "Card Title", 
+      "description": "Card Description"
+    }
+    ```
+  - Creates a new card in the database.
 
-   ```bash
-   { 
-   "title": "Card Title", 
-   "description": "Card Description"
-   }
-   ```
+- **Get all cards**:
+  - `GET /cards`
+  - Returns a list of all cards.
 
- - Creates a new card in the database.
+- **Get a specific card by title**:
+  - `GET /cards/:title`
+  - Returns the details of a specific card by its title.
 
-- Get all cards:
- - GET /cards
- - Returns a list of all cards. 
-
-- Get a specific card by title:
- - GET /cards/:title
- - Returns the details of a specific card by its title. 
 
 
 
@@ -102,19 +101,21 @@ This project is a fullstack application designed to manage "Help Center" cards. 
 ## Folder Structure
 
 ### Backend
- - backend/
-  - models/ - Contains the card model.
-   - card.js
-  - index.js - Entry point for the backend server.
+- **backend/**
+  - `models/` - Contains the card model.
+    - `card.js`
+  - `index.js` - Entry point for the backend server.
+
 
 ### Frontend
- - frontend/
-  - src/
-   - components/ - Contains reusable components (e.g., Navbar, Footer, Modal).
-   - App.jsx - Main application component.
-   - main.jsx - Entry point for the frontend application.
-   - index.css - Tailwind CSS styles.
-  - vite.config.js - Vite configuration file.
+- **frontend/**
+  - `src/`
+    - `components/` - Contains reusable components (e.g., Navbar, Footer, Modal).
+    - `App.jsx` - Main application component.
+    - `main.jsx` - Entry point for the frontend application.
+    - `index.css` - Tailwind CSS styles.
+  - `vite.config.js` - Vite configuration file.
+
 
 ## Usage
  * Start the backend server:
